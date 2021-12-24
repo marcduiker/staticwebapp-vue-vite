@@ -30,7 +30,7 @@ To install the dependencies run:
 npm run init
 ```
 
-To run the Static Web Apps Emulator:
+To run the web app locally:
 
 1. Start the Vue front-end in the root:
 

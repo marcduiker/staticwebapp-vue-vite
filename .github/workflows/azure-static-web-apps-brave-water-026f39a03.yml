@@ -4,10 +4,16 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**/*.md'
+      - 'img/*.png'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+    paths-ignore:
+      - '**/*.md'
+      - 'img/*.png'
 
 jobs:
   build_and_deploy_job:

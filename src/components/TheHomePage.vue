@@ -13,6 +13,7 @@
     >
       Reset title
     </button>
+    <p>Use this template to make a cool <a href="https://docs.microsoft.com/azure/static-web-apps/">Azure Static Web App</a> yourself! 🚀</p>
   </div>
 </template>
 
@@ -39,5 +40,7 @@ export default {
 </script>
 
 <style scope>
-
+body {
+  font-family: 'Comic Sans MS'
+}
 </style>

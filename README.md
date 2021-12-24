@@ -1,12 +1,26 @@
 # Azure Static Web App Template with Node.js API
 
-This is a template repository for [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/) that comes pre-configured with:
+This is a template repository for creating [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/) that comes pre-configured with:
 
 * [Vue.js v3](https://v3.vuejs.org/)
 * [Vue Router v4](https://next.router.vuejs.org/)
 * [Vuex v4](https://next.vuex.vuejs.org/)
 * [A Node.js Azure Function](https://docs.microsoft.com/azure/static-web-apps/apis)
 * [Vite.js](https://vitejs.dev/)
+
+---
+
+## Template
+
+This template contains a minimal Vue.js based application with a component that displays an `h1` element, two `button`s and a paragraph. The text for the `h1` is retrieved from the Vuex store. It's either a default value or a value retrieved via the `getTitleFromApi` function, located in the `api` folder.
+
+![Using the default title](img/swa-homepage1.png)
+
+![Using the title from the API](img/swa-homepage2.png)
+
+---
+
+## Running Azure Static Web Apps locally
 
 To install the dependencies run:
 

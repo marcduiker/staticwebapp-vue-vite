@@ -18,6 +18,8 @@ This template contains a minimal Vue.js based application with a component that 
 
 ![Using the title from the API](img/swa-homepage2.png)
 
+Live version [running in Azure](https://brave-water-026f39a03.azurestaticapps.net/).
+
 ---
 
 ## Running Azure Static Web Apps locally

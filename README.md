@@ -24,7 +24,21 @@ To run the Static Web Apps Emulator:
 
     > This should run the app on `http://localhost:3000/`.
 
-2. Start the Node.js API (Azure Functions) in the `api` folder:
+2. Navigate to the `api` folder and add a file named `local.settings.json` with this content:
+
+    ```json
+    {
+      "IsEncrypted": false,
+      "Values": {
+        "AzureWebJobsStorage": "",
+        "FUNCTIONS_WORKER_RUNTIME": "node"
+      }
+    }
+    ```
+
+    > This file is .gitignored since it is used to store connection strings and secrets.
+
+3. Start the Node.js API (Azure Functions) in the `api` folder:
 
     ```shell
     cd api
@@ -33,7 +47,7 @@ To run the Static Web Apps Emulator:
 
     > This should run the API on `http://localhost:7071/`.
 
-3. Finally start the Azure Static Web Apps CLI in the root:
+4. Finally, start the Azure Static Web Apps CLI in the root:
 
     ```shell
      swa start http://localhost:3000 --api-location http://localhost:7071

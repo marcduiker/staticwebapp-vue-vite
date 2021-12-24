@@ -9,6 +9,7 @@ export const store = createStore({
   },
   getters: {
     getTitle: (state) => state.title ?? state.defaultTitle,
+    isDefaultTitle: (state) => state.title === null,
   },
   mutations: {
     setTitle(state, input) {

@@ -1,10 +1,16 @@
 <template>
   <div>
     <h1>{{ getTitle }}</h1>
-    <button @click="setTitleViaApi">
+    <button
+      :disabled="!isDefaultTitle"
+      @click="setTitleViaApi"
+    >
       Set title via API
     </button>
-    <button @click="resetTitle">
+    <button
+      :disabled="isDefaultTitle"
+      @click="resetTitle"
+    >
       Reset title
     </button>
   </div>
@@ -18,7 +24,10 @@ export default {
   components: {
   },
    computed: {
-    ...mapGetters(["getTitle"])
+    ...mapGetters([
+        "getTitle",
+        "isDefaultTitle"
+      ])
   },
   methods: {
     ...mapActions([

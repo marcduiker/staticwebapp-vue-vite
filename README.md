@@ -1,6 +1,6 @@
 # Azure Static Web App Template with Node.js API
 
-This is a template repository for Azure Static Web Apps that comes pre-configured with:
+This is a template repository for [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/) that comes pre-configured with:
 
 * [Vue.js v3](https://v3.vuejs.org/)
 * [Vue Router v4](https://next.router.vuejs.org/)

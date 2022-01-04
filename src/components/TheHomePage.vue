@@ -13,7 +13,7 @@
     >
       Reset title
     </button>
-    <p>Use this template to make a cool <a href="https://docs.microsoft.com/azure/static-web-apps/">Azure Static Web App</a> yourself! 🚀</p>
+    <p>Use <a href="https://github.com/marcduiker/staticwebapp-vue-vite">this GitHub template repo</a> to make a cool <a href="https://docs.microsoft.com/azure/static-web-apps/">Azure Static Web App</a> yourself! 🚀</p>
   </div>
 </template>
 

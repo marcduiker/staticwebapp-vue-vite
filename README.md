@@ -24,49 +24,34 @@ Live version [running in Azure](https://brave-water-026f39a03.azurestaticapps.ne
 
 ## Running Azure Static Web Apps locally
 
-To install the dependencies run:
+1. To install the dependencies run:
 
-```shell
-npm run init
-```
-
-To run the web app locally:
-
-1. Start the Vue front-end in the root:
-
-    ```shell
-    npm run dev
-    ```
-
-    > This should run the app on `http://localhost:3000/`.
+  ```shell
+  npm run init
+  ```
 
 2. Navigate to the `api` folder and add a file named `local.settings.json` with this content:
 
-    ```json
-    {
-      "IsEncrypted": false,
-      "Values": {
-        "AzureWebJobsStorage": "",
-        "FUNCTIONS_WORKER_RUNTIME": "node"
-      }
+  ```json
+  {
+    "IsEncrypted": false,
+    "Values": {
+      "AzureWebJobsStorage": "",
+      "FUNCTIONS_WORKER_RUNTIME": "node"
     }
-    ```
+  }
+  ```
 
-    > This file is .gitignored since it is used to store connection strings and secrets.
+  > This file is .gitignored since it is used to store connection strings and secrets.
 
-3. Start the Node.js API (Azure Functions) in the `api` folder:
+3. To run everything type:
 
-    ```shell
-    cd api
-    func start
-    ```
+  ```shell
+  npm run all
+  ```
 
-    > This should run the API on `http://localhost:7071/`.
+  > This starts the Vue app on `localhost:3000`, the Node Azure Function on `localhost:7071`, and the Static Web App on `localhost:4280`.
 
-4. Finally, start the Azure Static Web Apps CLI in the root:
+  > If you need to change the port numbers, please edit them in the `package.json` scripts section.
 
-    ```shell
-     swa start http://localhost:3000 --api-location http://localhost:7071
-    ```
-
-    > This should run the Azure Static Web App on `http://localhost:4280`.
+4. View the Static Web App on [`http://localhost:4280`](http://localhost:4280).

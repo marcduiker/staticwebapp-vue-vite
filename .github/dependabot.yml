@@ -7,7 +7,15 @@ updates:
       interval: 'daily'
       time: '6:00'
     reviewers:
-      - "marcduiker"
+      - 'marcduiker'
+
+  - package-ecosystem: 'npm'
+    directory: '/api'
+    schedule:
+      interval: 'daily'
+      time: '6:00'
+    reviewers:
+      - 'marcduiker'
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -15,4 +23,4 @@ updates:
       interval: "daily"
       time: '6:00'
     reviewers:
-      - "marcduiker"
+      - 'marcduiker'
